@@ -1,0 +1,16 @@
+.commentContainer {
+    border: 1px solid orange; 
+    margin-bottom: 10px;
+  }
+  
+  .commentEmail {
+    font-weight: bold; 
+    font-size: 1.2em;
+    text-align: left;
+  }
+  
+  .commentBody {
+    font-size: 1em;
+    text-align: left;
+  }
+  
