@@ -68,19 +68,16 @@ class AboutUs extends Component<CommentsProps, CommentsState> {
       fontWeight: "bold",
       fontSize: "1.2em",
       color: "black",
-      textAlign: "left",
     };
 
     const commentEmailTextStyle = {
       fontSize: "1em",
       color: "gray",
-      textAlign: "left",
     };
 
     const commentBodyStyle = {
       fontSize: "1em",
       color: "black",
-      textAlign: "left",
     };
 
     return (
