@@ -1,0 +1,449 @@
+.heroSection {
+
+    position: absolute;
+    height: 920px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+
+    background: #EEEEEE;
+}
+
+.shadow1 {
+
+    position: absolute;
+    height: 1043.26px;
+    left: -480.76px;
+    right: 0px;
+    top: -455.6px;
+
+    background: linear-gradient(178.48deg, #E2E2E2 19.61%, #E2E2E2 68.64%, #C3CACF 80.83%, #EDEDED 92.24%);
+    transform: matrix(0.99, -0.11, 0.11, 0.99, 0, 0);
+
+}
+
+.shadow2 {
+    /* Rectangle 1 */
+
+    position: absolute;
+    height: 483.99px;
+    left: -150px;
+    right: -4016.72px;
+    bottom: 0px;
+
+    background: linear-gradient(180deg, #B3BCC1 75.62%, rgba(179, 188, 193, 0) 93.85%);
+    transform: matrix(-0.99, 0.13, -0.12, -0.99, 0, 0);
+
+}
+
+.shadow3 {
+    /* Rectangle 13 */
+
+    position: absolute;
+    left: -270.05px;
+    right: -52.23px;
+    top: 900.38px;
+    bottom: 2943.35px;
+
+    background: linear-gradient(180deg, #B4BDC1 0%, #E2E2E2 100%);
+    transform: matrix(1, 0, -0.49, 0.87, 0, 0);
+
+}
+
+.logoContainer {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 49px;
+
+    position: absolute;
+    width: 516px;
+    height: 96px;
+    left: 87px;
+    top: 57px;
+
+}
+
+#logoSvg {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    isolation: isolate;
+
+    width: 160px;
+    height: 96px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+#logoTitle {
+    width: 307px;
+    height: 56px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 767;
+    font-size: 50px;
+    line-height: 61px;
+
+    color: #E06A1A;
+    font-variation-settings: 'slnt' 0;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.navContainer {
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 0px;
+    gap: 32px;
+
+    position: absolute;
+    width: 596px;
+    height: 45px;
+    right: 136px;
+    top: 83px;
+
+}
+
+.navButton {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* Center the content horizontally */
+    padding: 8px 16px;
+
+    /* Remove the large gap */
+    gap: 0;
+
+    width: 157px;
+    height: 45px;
+
+    background: #F58220;
+    border-radius: 8px;
+
+    /* INFO */
+    width: 125px;
+    height: 29px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+
+    color: #FFFFFF;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.introContainer {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 34px;
+
+    position: absolute;
+    width: 464px;
+    height: 398px;
+    left: 137px;
+    bottom: 210px;
+}
+
+#introTitle {
+    width: 464px;
+    height: 194px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 767;
+    font-size: 80px;
+    line-height: 97px;
+
+    color: #E06A1A;
+    font-variation-settings: 'slnt' 0;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+
+#introText {
+    width: 464px;
+    height: 170px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+
+    color: #313D49;
+
+    mix-blend-mode: normal;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+#mainImage {
+    position: absolute;
+    width: 850px;
+    height: 550px;
+    right: 5px;
+    bottom: 100px;
+}
+
+#carsText {
+    position: absolute;
+    width: 805px;
+    height: 68px;
+    left: 4px;
+    top: 0px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 42px;
+    color: #F58220;
+}
+
+#carsContainer {
+    position: absolute;
+    width: 1438px;
+    left: calc(50% - 1438px/2 - 8.5px);
+    right: 0px;
+    top: 983px;
+}
+
+#carRow {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    width: 100%s;
+    height: 400px;
+    left: 0px;
+    top: 68px;
+}
+
+.carBox {
+    position: relative;
+    flex: 1;
+    background: rgba(255, 255, 255, 0.57);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 6px;
+
+}
+
+.carImage {
+    width: 65%;
+    height: auto;
+}
+
+.carName {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 42px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.carButton {
+    width: 130px;
+    height: 54px;
+    background: #E06A1A;
+    border-radius: 100px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 42px;
+    color: #FFFFFF;
+}
+
+
+#bookContainer {
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 39px;
+    isolation: isolate;
+
+    position: absolute;
+width: 945px;
+height: 311px;
+left: calc(50% - 945px/2);
+top: 1529px;
+}
+
+#bookTitle1 {
+    width: 945px;
+    height: 139px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 73px;
+    text-align: center;
+
+    color: #000000;
+    font-variation-settings: 'slnt' 0;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    z-index: 0;
+    margin-bottom: 200px;
+}
+
+#bookButton {
+    width: 478px;
+    height: 133px;
+
+    background: #E06A1A;
+    border-radius: 50px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    z-index: 1;
+
+
+    /* BOOK NOW */
+
+    position: absolute;
+    left: 276px;
+    right: 275px;
+    top: 69.13%;
+    bottom: 21.22%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 67px;
+    text-align: center;
+
+    color: #FFFFFF;
+    font-variation-settings: 'slnt' 0;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    z-index: 2;
+}
+
+#reasonsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 505px;
+    left: 0px;
+    top: 1976px;
+    background-color: white;
+}
+
+#reasonRow {
+    display: flex;
+    flex-direction: row;
+    /* Change to row to place items side by side */
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+    /* Add top margin for spacing between reasonTitle and reasonRow */
+}
+
+
+.eachReason {
+    display: flex;
+    flex-direction: column;
+    /* Each reason is a column flex container */
+    align-items: center;
+    /* Center items horizontally in eachReason */
+    margin: 0 20px;
+    /* Add some spacing between eachReason */
+}
+
+.reasonText {
+    width: 100%;
+    /* Make the text fill the width of eachReason */
+    text-align: center;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 42px;
+    text-align: center;
+
+    color: #000000;
+    font-variation-settings: 'slnt' 0;
+}
+
+.reasonImg {
+    width: 100%;
+    max-width: 304px;
+    /* Limit the image width */
+    height: auto;
+    /* Maintain the image aspect ratio */
+}
+
+#reasonTitle {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 573;
+    font-size: 50px;
+    line-height: 61px;
+    text-align: center;
+
+    color: #000000;
+    font-variation-settings: 'slnt' 0;
+}
