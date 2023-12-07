@@ -1,5 +1,6 @@
 import React from "react";
 import styles from './header.module.css'
+import Link from "next/link";
 
 function Header() {
     return <>
@@ -13,10 +14,18 @@ function Header() {
             <h2 id={styles.logoTitle}>EcoSpark</h2>
         </div>
         <div className={styles.navContainer}>
-            <button className={styles.navButton}>Home</button>
-            <button className={styles.navButton}>About</button>
-            <button className={styles.navButton}>Products</button>
-            <button className={styles.navButton}>Contacts</button>
+            <Link href="/">
+                <p className={styles.navButton}>Home</p>
+            </Link>
+            <Link href="./about">
+                <p className={styles.navButton}>About</p>
+            </Link>
+            <Link href="/products">
+                <p className={styles.navButton}>Products</p>
+            </Link>
+            <Link href="/contacts">
+                <p className={styles.navButton}>Contacts</p>
+            </Link>
         </div>
     </>
 }

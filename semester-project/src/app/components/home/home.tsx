@@ -6,10 +6,11 @@ import Header from '../header/header';
 function Home() {
     return (
         <>
+        <div className={styles.homeContainer}>
             <div className={styles.heroSection}>
                 {/*<div className={styles.shadow1}></div>
                 <div className={styles.shadow2}></div>*/}
-                <Header/>
+                
                 <div className={styles.introContainer}>
                     <h1 id={styles.introTitle}>EcoSpark Automotive</h1>
                     <p id={styles.introText}>Join us in the journey towards a cleaner, more sustainable future. We're driven by a vision of cleaner, smarter, and more efficient transportation.</p>
@@ -61,6 +62,7 @@ function Home() {
                     <p className={styles.reasonText}>Substantial Cost Savings and Financial Benefits</p>
                 </div>
                 </div>
+            </div>
             </div>
         </>
     );

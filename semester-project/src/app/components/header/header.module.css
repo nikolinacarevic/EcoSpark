@@ -3,14 +3,14 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0px;
     gap: 49px;
 
-    position: absolute;
+    position: fixed; /* Change from absolute to fixed */
     width: 516px;
     height: 96px;
-    left: 87px;
-    top: 57px;
+    left: 20px; /* Adjust left position */
+    top: 20px; /* Adjust top position */
+    z-index: 1000; /* Add z-index to ensure it appears above other content */
 
 }
 
@@ -18,17 +18,11 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
     gap: 10px;
     isolation: isolate;
 
     width: 160px;
     height: 96px;
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
 }
 
 #logoTitle {
@@ -56,14 +50,14 @@
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    padding: 0px;
     gap: 32px;
 
-    position: absolute;
+    position: fixed;
     width: 596px;
     height: 45px;
-    right: 136px;
-    top: 83px;
+    right: 20px; 
+    top: 20px;
+    z-index: 1000;
 
 }
 

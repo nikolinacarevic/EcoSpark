@@ -1,9 +1,7 @@
 #footerContainer {
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 471px;
-    left: 0px;
-    top: 3404px;
 }
 
 #footerFirst {
