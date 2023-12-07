@@ -44,56 +44,49 @@
     order: 1;
     flex-grow: 0;
 }
-
 .navContainer {
-
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     gap: 32px;
-
     position: fixed;
     width: 596px;
     height: 45px;
-    right: 20px; 
+    right: 20px;
     top: 20px;
     z-index: 1000;
-
-}
-
-.navButton {
-    /* Auto layout */
+  }
+  
+  .navButton {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    /* Center the content horizontally */
     padding: 8px 16px;
-
-    /* Remove the large gap */
     gap: 0;
-
     width: 157px;
     height: 45px;
-
     background: #F58220;
     border-radius: 8px;
-
-    /* INFO */
     width: 125px;
     height: 29px;
-
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
-    /* identical to box height */
-
     color: #FFFFFF;
-
-    /* Inside auto layout */
     flex: none;
     order: 0;
     flex-grow: 0;
-}
+    transition: background-color 0.3s ease; /* Add transition for smooth color change */
+  }
+  
+  .navButton:hover {
+    background-color: #FFA93F; /* Change color on hover */
+  }
+  
+  .navButton.active {
+    background-color: #e46c03d1; /* Darker color for active state */
+  }
+  
