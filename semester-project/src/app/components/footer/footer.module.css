@@ -10,8 +10,11 @@
     right: 0%;
     top: 0%;
     bottom: 0%;
-
     background: #FFA95F;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #footerLast {
