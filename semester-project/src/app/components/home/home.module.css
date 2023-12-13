@@ -1,281 +1,289 @@
-.homeContainer {
-    position: relative;
-}
-
-.heroSection {
-    height: 920px;
-    background: #EEEEEE;
-    padding-left: 100px; 
-    padding-top: 120px;
-    box-sizing: border-box;
-    display: flex; /* Add this line to enable flexbox */
-    align-items: center; /* Center items vertically within the heroSection */
-    justify-content: space-between;
-}
-
-.introContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 34px;
-    width: 464px;
-    height: 398px;
-}
-
-#introTitle {
-    width: 464px;
-    height: 194px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 767;
-    font-size: 80px;
-    line-height: 97px;
-    color: #E06A1A;
-    font-variation-settings: 'slnt' 0;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
-
-#introText {
-    width: 464px;
-    height: 170px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 34px;
-    color: #313D49;
-    mix-blend-mode: normal;
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-}
-
-#mainImage {
-    width: 900px;
-    height: 550px;
-    margin-left: 10px; /* Adjust margin as needed */
-}
-
-
-#carsText {
-
-    width: 805px;
-    height: 68px;
-    text-align: center;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 35px;
-    line-height: 42px;
-    color: #F58220;
-}
-
-#carsContainer {
-    position: relative;
-    width: 1438px;
-    margin: 20px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#carRow {
-    display: flex;
-    gap: 10px;
-   
-    width: 100%s;
-    height: 400px;
-  
-}
-
-.carBox {
-    position: relative;
-    flex: 1;
-    background: rgba(255, 255, 255, 0.57);
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    padding: 6px;
-
-}
-
-.carImage {
-    width: 65%;
-    height: auto;
-}
-
-.carName {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 27px;
-    line-height: 42px;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.carButton {
-    width: 130px;
-    height: 54px;
-    background: #E06A1A;
-    border-radius: 100px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 35px;
-    line-height: 42px;
-    color: #FFFFFF;
-}
-
-
-#bookContainer {
-
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    padding-top: 35px;
-    padding-bottom: 45px;
-    gap: 39px;
-    isolation: isolate;
-
-    position: relative;
-    width: 945px;
-    margin: 20px auto;
-
-}
-
-#bookTitle1 {
-    width: 945px;
-    height: 0px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 60px;
-    line-height: 73px;
-    text-align: center;
-
-    color: #000000;
-    font-variation-settings: 'slnt' 0;
-
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    z-index: 0;
-    margin-bottom: 150px;
-}
-
-#bookButton {
-    width: 478px;
-    height: 133px;
-
-    background: #E06A1A;
-    border-radius: 50px;
-
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    z-index: 1;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 55px;
-    line-height: 67px;
-    text-align: center;
-
-    color: #FFFFFF;
-    font-variation-settings: 'slnt' 0;
-
-
-    /* Inside auto layout */
-    flex: none;
-    order: 2;
-    flex-grow: 0;
-    z-index: 2;
-}
-
-#reasonsContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: 100%;
-    height: 505px;
+@media (min-width: 768px) {
+    .homeContainer {
+        position: relative;
+    }
     
-    background-color: #f5f5f5;
-    margin: 20px auto;
-}
-
-#reasonRow {
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    /* Change to row to place items side by side */
-    justify-content: space-around;
-    width: 100%;
-    margin-top: 20px;
-    /* Add top margin for spacing between reasonTitle and reasonRow */
-}
-
-
-.eachReason {
-    width: 550px;
-    display: flex;
-    flex-direction: column;
-    /* Each reason is a column flex container */
-    align-items: center;
-    /* Center items horizontally in eachReason */
-    margin: 0 20px;
-    /* Add some spacing between eachReason */
-}
-
-.reasonText {
-    width: 100%;
-    /* Make the text fill the width of eachReason */
-    text-align: center;
+    .heroSection {
+        height: 920px;
+        background: #EEEEEE;
+        padding-left: 100px; 
+        padding-top: 120px;
+        box-sizing: border-box;
+        display: flex; /* Add this line to enable flexbox */
+        align-items: center; /* Center items vertically within the heroSection */
+        justify-content: space-between;
+    }
     
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 35px;
-    line-height: 42px;
-    text-align: center;
-
-    color: #000000;
-    font-variation-settings: 'slnt' 0;
+    .introContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 34px;
+        width: 464px;
+        height: 398px;
+    }
+    
+    #introTitle {
+        width: 464px;
+        height: 194px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 767;
+        font-size: 80px;
+        line-height: 97px;
+        color: #E06A1A;
+        font-variation-settings: 'slnt' 0;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    
+    #introText {
+        width: 464px;
+        height: 170px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 34px;
+        color: #313D49;
+        mix-blend-mode: normal;
+        /* Inside auto layout */
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+    
+    #mainImage {
+        width: 900px;
+        height: 550px;
+        margin-left: 10px; /* Adjust margin as needed */
+    }
+    
+    
+    #carsText {
+    
+        width: 805px;
+        height: 68px;
+        text-align: center;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 42px;
+        color: #F58220;
+    }
+    
+    #carsContainer {
+        position: relative;
+        width: 1438px;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #carRow {
+        display: flex;
+        gap: 10px;
+       
+        width: 100%s;
+        height: 400px;
+      
+    }
+    
+    .carBox {
+        position: relative;
+        flex: 1;
+        background: rgba(255, 255, 255, 0.57);
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 6px;
+    
+    }
+    
+    .carImage {
+        width: 65%;
+        height: auto;
+    }
+    
+    .carName {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 27px;
+        line-height: 42px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .carButton {
+        width: 130px;
+        height: 54px;
+        background: #E06A1A;
+        border-radius: 100px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 42px;
+        color: #FFFFFF;
+    }
+    
+    
+    #bookContainer {
+    
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        padding-top: 35px;
+        padding-bottom: 45px;
+        gap: 39px;
+        isolation: isolate;
+    
+        position: relative;
+        width: 945px;
+        margin: 20px auto;
+    
+    }
+    
+    #bookTitle1 {
+        width: 945px;
+        height: 0px;
+    
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 73px;
+        text-align: center;
+    
+        color: #000000;
+        font-variation-settings: 'slnt' 0;
+    
+    
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        z-index: 0;
+        margin-bottom: 150px;
+    }
+    
+    #bookButton {
+        width: 478px;
+        height: 133px;
+    
+        background: #E06A1A;
+        border-radius: 50px;
+    
+        /* Inside auto layout */
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        z-index: 1;
+    
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 55px;
+        line-height: 67px;
+        text-align: center;
+    
+        color: #FFFFFF;
+        font-variation-settings: 'slnt' 0;
+    
+    
+        /* Inside auto layout */
+        flex: none;
+        order: 2;
+        flex-grow: 0;
+        z-index: 2;
+    }
+    
+    #reasonsContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        height: 505px;
+        
+        background-color: #f5f5f5;
+        margin: 20px auto;
+    }
+    
+    #reasonRow {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        /* Change to row to place items side by side */
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 20px;
+        /* Add top margin for spacing between reasonTitle and reasonRow */
+    }
+    
+    
+    .eachReason {
+        width: 550px;
+        display: flex;
+        flex-direction: column;
+        /* Each reason is a column flex container */
+        align-items: center;
+        /* Center items horizontally in eachReason */
+        margin: 0 20px;
+        /* Add some spacing between eachReason */
+    }
+    
+    .reasonText {
+        width: 100%;
+        /* Make the text fill the width of eachReason */
+        text-align: center;
+        
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 42px;
+        text-align: center;
+    
+        color: #000000;
+        font-variation-settings: 'slnt' 0;
+    }
+    
+    .reasonImg {
+        width: 100%;
+        max-width: 304px;
+        /* Limit the image width */
+        height: auto;
+        /* Maintain the image aspect ratio */
+    }
+    
+    #reasonTitle {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 573;
+        font-size: 50px;
+        line-height: 61px;
+        text-align: center;
+    
+        color: #000000;
+        font-variation-settings: 'slnt' 0;
+    }
+    
 }
 
-.reasonImg {
-    width: 100%;
-    max-width: 304px;
-    /* Limit the image width */
-    height: auto;
-    /* Maintain the image aspect ratio */
-}
-
-#reasonTitle {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 573;
-    font-size: 50px;
-    line-height: 61px;
-    text-align: center;
-
-    color: #000000;
-    font-variation-settings: 'slnt' 0;
+@media (max-width: 767px) {
+    
+    
 }

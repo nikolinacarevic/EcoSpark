@@ -1,14 +1,53 @@
-#header {
+.navButton {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  padding: 30px;
-  background-color: #FFFFFF;
-  width: 100%;
-  position: fixed;
-  z-index: 1000;
+  justify-content: center;
+  padding: 8px 16px;
+  gap: 0;
+  width: 157px;
+  height: 45px;
+  background: #F58220;
+  border-radius: 8px;
+  width: 125px;
+  height: 29px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFFFFF;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  transition: background-color 0.3s ease;
+  /* Add transition for smooth color change */
 }
-.logoContainer {
+
+.navButton:hover {
+  background-color: #FFA93F;
+  /* Change color on hover */
+}
+
+.navButton.active {
+  background-color: #e46c03d1;
+  /* Darker color for active state */
+}
+
+@media (min-width: 768px) {
+
+  #header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: #FFFFFF;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+  }
+
+  .logoContainer {
 
     display: flex;
     flex-direction: row;
@@ -18,13 +57,16 @@
     /* Change from absolute to fixed */
     width: 516px;
     height: 96px;
-    left: 20px; /* Adjust left position */
-    top: 20px; /* Adjust top position */
-    z-index: 1000; /* Add z-index to ensure it appears above other content */
+    left: 20px;
+    /* Adjust left position */
+    top: 20px;
+    /* Adjust top position */
+    z-index: 1000;
+    /* Add z-index to ensure it appears above other content */
 
-}
+  }
 
-#logoSvg {
+  #logoSvg {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -33,69 +75,105 @@
 
     width: 160px;
     height: 96px;
-}
-
-#logoTitle {
-    width: 307px;
-    height: 56px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 767;
-    font-size: 50px;
-    line-height: 61px;
-
-    color: #F58220;
-    font-variation-settings: 'slnt' 0;
-
-
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-}
-.navContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    gap: 32px;
-    width: 596px;
-    height: 45px;
-    right: 20px;
-    top: 20px;
-    z-index: 1000;
   }
-  
-  .navButton {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 8px 16px;
-    gap: 0;
-    width: 157px;
-    height: 45px;
-    background: #F58220;
-    border-radius: 8px;
-    width: 125px;
-    height: 29px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 29px;
-    color: #FFFFFF;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    transition: background-color 0.3s ease; /* Add transition for smooth color change */
+    .navContainer{
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      gap: 32px;
+      width: 596px;
+      height: 45px;
+      right: 20px;
+      top: 20px;
+      z-index: 1000;
+    }
+
+    #logoTitle {
+      width: 307px;
+      height: 56px;
+
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 767;
+      font-size: 50px;
+      line-height: 61px;
+
+      color: #F58220;
+      font-variation-settings: 'slnt' 0;
+
+
+      /* Inside auto layout */
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+    }
   }
+
+  @media (max-width: 767px) {
+
+    #header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      background-color: #FFFFFF;
+      width: 100%;
+      position: fixed;
+      z-index: 1000;
+    }
+
+
+    .logoContainer {
+
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 49px;
+
+      /* Change from absolute to fixed */
+      width: 66px;
+      height: 26px;
+      left: 10px;
+      /* Adjust left position */
+      top: 10px;
+      /* Adjust top position */
+      z-index: 1000;
+      /* Add z-index to ensure it appears above other content */
+
+    }
+
+    #logoSvg {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      isolation: isolate;
   
-  .navButton:hover {
-    background-color: #FFA93F; /* Change color on hover */
+      width: 80px;
+      height: 26px;
+    }
+
+    .navContainer {
+      display: none;
+    }
+
+    #logoTitle {
+      width: 307px;
+      height: 56px;
+
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 367;
+      font-size: 20px;
+      line-height: 61px;
+
+      color: #F58220;
+      font-variation-settings: 'slnt' 0;
+
+
+      /* Inside auto layout */
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+    }
   }
-  
-  .navButton.active {
-    background-color: #e46c03d1; /* Darker color for active state */
-  }
-  
