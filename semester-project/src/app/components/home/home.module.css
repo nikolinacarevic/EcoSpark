@@ -1,7 +1,5 @@
 
-    .homeContainer {
-        position: relative;
-    }
+    
     
     
     
@@ -76,7 +74,7 @@
         display: flex;
         gap: 10px;
        
-        width: 100%;
+        width: 1400px;
         height: 400px;
       
     }
