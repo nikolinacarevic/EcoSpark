@@ -1,28 +1,4 @@
-.navButton {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 8px 16px;
-  gap: 0;
-  width: 157px;
-  height: 45px;
-  background: #F58220;
-  border-radius: 8px;
-  width: 125px;
-  height: 29px;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
-  color: #FFFFFF;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  transition: background-color 0.3s ease;
-  /* Add transition for smooth color change */
-}
+
 
 .navButton:hover {
   background-color: #FFA93F;
@@ -107,6 +83,31 @@
       order: 1;
       flex-grow: 0;
     }
+    .navButton {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 16px;
+      gap: 0;
+      width: 157px;
+      height: 45px;
+      background: #F58220;
+      border-radius: 8px;
+      width: 125px;
+      height: 29px;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 29px;
+      color: #FFFFFF;
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+      transition: background-color 0.3s ease;
+      /* Add transition for smooth color change */
+    }
   }
 
   @media (max-width: 767px) {
@@ -114,8 +115,9 @@
     #header {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      padding: 10px;
+      justify-content: space-evenly;
+      flex-direction: column;
+      padding: 1.5%;
       background-color: #FFFFFF;
       width: 100%;
       position: fixed;
@@ -128,17 +130,7 @@
       display: flex;
       flex-direction: row;
       align-items: center;
-      gap: 49px;
-
-      /* Change from absolute to fixed */
-      width: 66px;
-      height: 46px;
-      left: 10px;
-      /* Adjust left position */
-      top: 10px;
-      /* Adjust top position */
-      z-index: 1000;
-      /* Add z-index to ensure it appears above other content */
+      gap: 10px;
 
     }
 
@@ -146,20 +138,48 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      gap: 10px;
       isolation: isolate;
   
-      width: 80px;
+      width: auto;
       height: 26px;
     }
 
-    .navContainer {
-      display: none;
+    .navContainer{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 100%;
+      height: auto;
+      z-index: 1000;
+    }
+    .navButton {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding: 5px;
+      padding-left: 7px;
+      padding-right: 7px;
+      width: auto;
+      height: auto;
+      background: #F58220;
+      border-radius: 7px;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 10px;
+      color: #FFFFFF;
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+      transition: background-color 0.3s ease;
+      /* Add transition for smooth color change */
     }
 
     #logoTitle {
-      width: 307px;
-      height: 56px;
+      width: 20%;
+      height: auto;
 
       font-family: 'Inter';
       font-style: normal;
