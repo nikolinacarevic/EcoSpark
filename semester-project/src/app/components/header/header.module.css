@@ -124,6 +124,19 @@
       z-index: 1000;
     }
 
+    .logoNav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding-left: 7%;
+      padding-right: 4%;
+    }
+
+    #dropButton img {
+      height: 30px;
+    }
 
     .logoContainer {
 
