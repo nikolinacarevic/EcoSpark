@@ -47,7 +47,7 @@ function Header() {
             <Link href="/products">
                 <p className={styles.navButton}>Products</p>
             </Link>
-            <Link href="/contacts">
+            <Link href="./contacts">
                 <p className={styles.navButton}>Contacts</p>
             </Link>
         </div>
