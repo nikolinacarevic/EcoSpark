@@ -27,3 +27,35 @@
     transform: translate(-50%, -50%);
     z-index: 1;
 }
+
+.wellcomeContainer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+    background-color: white;
+}
+
+#wellcomeTitle {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 550;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+    
+    color: #000000;
+}
+
+#wellcomeText {
+    padding-top: 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 80;
+    font-size: 28px;
+    line-height: 44px;
+    text-align: center;
+    
+    color: #000000;
+}
