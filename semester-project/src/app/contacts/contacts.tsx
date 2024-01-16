@@ -10,6 +10,11 @@ export default function Contacts() {
           <h1>Contact Us</h1>
           <p>We're thrilled to connect with you! Whether you have questions, suggestions, or just want to chat about the future of electric vehicles, we're here and ready to assist.</p>
         </div>
+        <div id={styles.infoBox}>
+          <div className={styles.oneInfo}>aaaaaa</div>
+          <div className={styles.oneInfo}>aaaaaa</div>
+          <div className={styles.oneInfo}>aaaaaa</div>
+        </div>
       </div>
   );
 }
