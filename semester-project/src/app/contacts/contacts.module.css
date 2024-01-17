@@ -14,36 +14,37 @@
     flex-direction: column;
     align-items: center;
 }
+
 .contactsText h1 {
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 75px;
-line-height: 91px;
-text-align: center;
-color: #F58220;
-font-variation-settings: 'slnt' 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 75px;
+    line-height: 91px;
+    text-align: center;
+    color: #F58220;
+    font-variation-settings: 'slnt' 0;
 
 }
 
 .contactsText p {
     padding-top: 20pxy;
-width: 990px;
-height: 334px;
-text-align: center;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 40px;
-line-height: 48px;
-text-align: center;
-color: #000000;
-font-variation-settings: 'slnt' 0;
+    width: 990px;
+    height: 334px;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: #000000;
+    font-variation-settings: 'slnt' 0;
 
 
 }
 
-#infoBox{
+#infoBox {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -53,20 +54,23 @@ font-variation-settings: 'slnt' 0;
     width: 100%;
 }
 
-.oneInfo{
-    width: 400px;
-    height: 400px;
+.oneInfo {
+    width: 300px;
+    height: 300px;
     border-color: #F58220;
     border-radius: 5%;
     border-style: solid;
     border-width: 6px;
+
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .oneInfoMiddle {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     border-color: #F58220;
     border-radius: 5%;
     border-style: solid;
@@ -75,4 +79,127 @@ font-variation-settings: 'slnt' 0;
     justify-content: center;
     margin-left: 5%;
     margin-right: 5%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.mailImage{
+    width: 30%;
+    height: 25%;
+}
+
+.callImage{
+    width: 28%;
+    height: 28;
+}
+
+.locationImage{
+    width: 30%;
+    height: 30%;
+}
+
+.boxText{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 30px;
+    text-align: center;
+
+    color: #000000;
+    font-variation-settings: 'slnt' 0;
+}
+
+#formBox h1 {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 38px;
+
+color: #F58220;
+font-variation-settings: 'slnt' 0;
+margin-bottom: 1%;
+}
+
+#formBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 5%;
+}
+
+#inputForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid rgba(0, 0, 0, 0.27);
+    border-radius: 20px;
+    width: 25%;
+    padding-top: 2%;
+    padding-bottom: 1.5%;
+}
+
+#inputForm input {
+    width: 80%;
+    margin-bottom: 4%;
+    border: 1px solid rgba(0, 0, 0, 0.625);
+    border-radius: 5px;
+    padding: 1%;
+}
+
+#formButton {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: inherit;
+text-align: center;
+
+color: #7C7C7C;
+font-variation-settings: 'slnt' 0;
+}
+
+#inputForm div p {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: inherit;
+text-align: center;
+
+color: #7C7C7C;
+font-variation-settings: 'slnt' 0;
+margin-left: 5%;
+padding-bottom: 1%;
+}
+
+.buttonBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#submitButton {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: inherit;
+text-align: center;
+
+color: #FFFFFF;
+font-variation-settings: 'slnt' 0;
+
+background: #F58220;
+border-radius: 10px;
+padding: 1%;
+margin-top: 6%;
 }
