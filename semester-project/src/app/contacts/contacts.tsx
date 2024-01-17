@@ -11,9 +11,11 @@ export default function Contacts() {
           <p>We're thrilled to connect with you! Whether you have questions, suggestions, or just want to chat about the future of electric vehicles, we're here and ready to assist.</p>
         </div>
         <div id={styles.infoBox}>
-          <div className={styles.oneInfo}>aaaaaa</div>
-          <div className={styles.oneInfo}>aaaaaa</div>
-          <div className={styles.oneInfo}>aaaaaa</div>
+          <div className={styles.oneInfo}>info@ecospark.hr</div>
+          <div className={styles.oneInfoMiddle}>021/ 123 456 +38598 7654 321
+          </div>
+          <div className={styles.oneInfo}>Put Mate Motike 32 21201 Labin
+          </div>
         </div>
       </div>
   );
