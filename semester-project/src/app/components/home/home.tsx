@@ -17,6 +17,7 @@ function Home() {
                 </div>
 
                 <img id={styles.mainImage} src='/images/maincar.png'></img>
+                <h1 className={styles.mobileIntroTitle}>EcoSpark Automotive</h1>
             </div>
             {/*<div className={styles.shadow3}></div>*/}
             <div id={styles.carsContainer}>

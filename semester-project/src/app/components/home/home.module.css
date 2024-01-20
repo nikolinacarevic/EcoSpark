@@ -263,12 +263,15 @@
         margin-bottom: 20px;
     }
     
+    .mobileIntroTitle {
+        display: none;
+    }
 }
 
 @media (max-width: 767px) {
 
     .heroSection {
-        padding-top: 120px;
+        padding-top: 100px;
         height: auto;
         box-sizing: border-box;
         display: flex; /* Add this line to enable flexbox */
@@ -288,21 +291,25 @@
         border-radius: 20px;
     }
     
-    #introTitle {
+    .mobileIntroTitle {
         width: 100%;
         height: auto;
         text-align: center;
         font-family: 'Inter';
         font-style: normal;
         font-weight: 767;
-        font-size: 24px;
-        color: #E06A1A;
+        font-size: 34px;
+        color: #F58220;
         font-variation-settings: 'slnt' 0;
         flex: none;
         order: 0;
         flex-grow: 0;
+        margin-bottom: 20px;
     }
 
+    #introTitle {
+        display: none;
+    }
     #introText {
         width: 100%;
         padding-left: 10%;
@@ -350,9 +357,10 @@
         text-align: center;
         font-family: 'Inter';
         font-style: normal;
-        font-weight: 700;
+        font-weight: 767;
         font-size: 24px;
         color: #F58220;
+        font-variation-settings: 'slnt' 0;
     }
 
     .carBox:first-child {
@@ -440,7 +448,7 @@
         font-family: 'Inter';
         font-style: normal;
         font-weight: 700;
-        font-size: 25px;
+        font-size: 22px;
         line-height: inherit;
         text-align: center;
         color: #FFFFFF;
