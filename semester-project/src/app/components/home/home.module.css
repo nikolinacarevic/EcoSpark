@@ -1,9 +1,9 @@
 @media (min-width: 768px) {
     .heroSection {
-        height: 920px;
         background: #EEEEEE;
-        padding-left: 100px; 
-        padding-top: 120px;
+        padding-left: 7%; 
+        padding-top: 15%;
+        padding-bottom: 9%;
         box-sizing: border-box;
         display: flex; /* Add this line to enable flexbox */
         align-items: center; /* Center items vertically within the heroSection */
@@ -14,6 +14,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+        margin-left: 5%;
         gap: 34px;
         width: 464px;
         height: 398px;
@@ -49,9 +50,9 @@
         flex-grow: 0;
     }
     #mainImage {
-        width: 900px;
-        height: 550px;
-        margin-left: 10px; /* Adjust margin as needed */
+        width: 620px;
+        height: auto;
+       margin-right: 5.5%;
     }
 
     #carsContainer {
@@ -66,22 +67,21 @@
     }
     #carRow {
         display: flex;
-        gap: 10px;
-       
-        width: 1400px;
-        height: 400px;
-      
+        gap: 20px;
+        width: 100%;
+        height: auto;
+        padding-left: 6%;
+        padding-right: 6%;
     }
 
     #carsText {
-    
         width: 805px;
         height: 68px;
         text-align: center;
         font-family: 'Inter';
         font-style: normal;
         font-weight: 700;
-        font-size: 35px;
+        font-size: 34px;
         line-height: 42px;
         color: #F58220;
     }
@@ -94,13 +94,21 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        padding: 6px;
-    
+        padding-top: 3%;
+        padding-bottom: 3%;
     }
     
     .carImage {
-        width: 65%;
+        width: 250px;
         height: auto;
+        padding-bottom: 8%;
+    }
+
+    .carImage1 {
+        margin-top: 3%;
+        width: 250px;
+        height: auto;
+        padding-bottom: 8%;
     }
     
     .carName {
@@ -114,29 +122,27 @@
     }
     
     .carButton {
-        width: 130px;
-        height: 54px;
+        width: 150px;
+        height: auto;
         background: #E06A1A;
         border-radius: 100px;
         font-family: 'Inter';
         font-style: normal;
         font-weight: 700;
-        font-size: 35px;
+        font-size: 25px;
         line-height: 42px;
         color: #FFFFFF;
     }
 
     #bookContainer {
-    
-    
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 0px;
-        padding-top: 35px;
-        padding-bottom: 45px;
-        gap: 39px;
+        padding-top: 20px;
+        padding-bottom: 50px;
+        gap: 20px;
         isolation: isolate;
     
         position: relative;
@@ -147,31 +153,25 @@
     
     #bookTitle1 {
         width: 945px;
-        height: 0px;
-    
         font-family: 'Inter';
         font-style: normal;
         font-weight: 700;
-        font-size: 60px;
-        line-height: 73px;
+        font-size: 38px;
+        line-height: inherit;
         text-align: center;
     
         color: #000000;
         font-variation-settings: 'slnt' 0;
-    
-    
         /* Inside auto layout */
         flex: none;
         order: 0;
         flex-grow: 0;
         z-index: 0;
-        margin-bottom: 150px;
     }
     
     #bookButton {
-        width: 478px;
-        height: 133px;
-    
+        width: 238px;
+        height: 50px;
         background: #E06A1A;
         border-radius: 50px;
     
@@ -184,8 +184,8 @@
         font-family: 'Inter';
         font-style: normal;
         font-weight: 700;
-        font-size: 55px;
-        line-height: 67px;
+        font-size: 30px;
+        line-height: inherit;
         text-align: center;
     
         color: #FFFFFF;
@@ -205,8 +205,8 @@
         justify-content: center;
         position: relative;
         width: 100%;
-        height: 505px;
-        
+        height: auto;
+        padding-top: 20px;
         background-color: #f5f5f5;
         margin: 20px auto;
     }
@@ -219,55 +219,48 @@
         justify-content: space-around;
         width: 100%;
         margin-top: 20px;
-        /* Add top margin for spacing between reasonTitle and reasonRow */
+        margin-left: 20px;
+        margin-right: 20px;
     }
     
     
     .eachReason {
-        width: 550px;
+        width: 330px;
         display: flex;
         flex-direction: column;
-        /* Each reason is a column flex container */
         align-items: center;
-        /* Center items horizontally in eachReason */
         margin: 0 20px;
-        /* Add some spacing between eachReason */
     }
     
     .reasonText {
         width: 100%;
-        /* Make the text fill the width of eachReason */
         text-align: center;
-        
         font-family: 'Inter';
         font-style: normal;
-        font-weight: 400;
-        font-size: 35px;
-        line-height: 42px;
+        font-weight: 500;
+        font-size: 23px;
+        line-height: inherit;
         text-align: center;
-    
         color: #000000;
         font-variation-settings: 'slnt' 0;
+        margin-bottom: 20px;
     }
     
     .reasonImg {
-        width: 100%;
-        max-width: 304px;
-        /* Limit the image width */
-        height: auto;
-        /* Maintain the image aspect ratio */
+        width: 130px;
+        height: 130px;
+        margin-bottom: 30px;
     }
     
     #reasonTitle {
         font-family: 'Inter';
-        font-style: normal;
-        font-weight: 573;
-        font-size: 50px;
-        line-height: 61px;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: inherit;
         text-align: center;
-    
         color: #000000;
         font-variation-settings: 'slnt' 0;
+        margin-bottom: 20px;
     }
     
 }
