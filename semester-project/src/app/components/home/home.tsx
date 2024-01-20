@@ -33,7 +33,7 @@ function Home() {
                         <button className={styles.carButton}>Buy</button>
                     </div>
                     <div className={styles.carBox}>
-                    <img className={styles.carImage} src='/images/car3.png'></img>
+                    <img className={styles.carImage1} src='/images/car3.png'></img>
                         <p className={styles.carName}>Mercedes-Benz EQS</p>
                         <button className={styles.carButton}>Buy</button>
                     </div>
@@ -41,7 +41,7 @@ function Home() {
             </div>
             <div id={styles.bookContainer}>
                 <div id={styles.bookTitle1}>
-                    <h3>Try out our cars</h3>
+                    <h3>Try out our cars!</h3>
                     <p>Book a test drive!</p>
                 </div>
                 <button id={styles.bookButton}>BOOK NOW</button>
