@@ -23,6 +23,7 @@ function Home() {
             <div id={styles.carsContainer}>
                 <p id={styles.carsText}>Enjoy vehicles at  best prices!</p>
                 <div id={styles.carRow}>
+                    <button className={styles.arrowCarBox}>&lt;</button>
                     <div className={styles.carBox}>
                     <img className={styles.carImage} src='/images/car1.png'></img>
                         <p className={styles.carName}>Volkswagen ID 4</p>
@@ -38,6 +39,7 @@ function Home() {
                         <p className={styles.carName}>Mercedes-Benz EQS</p>
                         <button className={styles.carButton}>Buy</button>
                     </div>
+                    <button className={styles.arrowCarBox}>&gt;</button>
                 </div>
             </div>
             <div id={styles.bookContainer}>
@@ -50,6 +52,7 @@ function Home() {
             <div id={styles.reasonsContainer}>
                 <p id={styles.reasonTitle}>Why EcoSpark?</p>
                 <div id={styles.reasonRow}>
+                <button className={styles.arrowReasonBox}>&lt;</button>
                 <div className={styles.eachReason}>
                 <img className={styles.reasonImg} src='/images/reason1.png'></img>
                     <p className={styles.reasonText}>Eco-Friendly and Sustainable Driving</p>
@@ -62,6 +65,7 @@ function Home() {
                 <img className={styles.reasonImg} src='/images/reason3.png'></img>
                     <p className={styles.reasonText}>Substantial Cost Savings and Financial Benefits</p>
                 </div>
+                <button className={styles.arrowReasonBox}>&gt;</button>
                 </div>
             </div>
             </div>

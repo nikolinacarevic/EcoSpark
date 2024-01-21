@@ -9,7 +9,7 @@
   box-sizing: border-box;
 
 position: relative;
-background: #E2E2E2;
+background: #dadada;
 }
 
 @media (prefers-color-scheme: dark) {
