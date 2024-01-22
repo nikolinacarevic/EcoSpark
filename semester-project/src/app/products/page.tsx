@@ -1,12 +1,13 @@
 import Image from 'next/image';
 import Header from '../components/header/header';
 import Footer from '../components/footer/footer';
+import Products from './products';
 
 export default function Main() {
   return (
     <>
       <Header />
-      <p style={{ paddingTop: '200px' }}>Ovo je PRODUCTS page</p>
+      <Products />
       <Footer />
     </>
   );

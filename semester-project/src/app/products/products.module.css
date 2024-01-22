@@ -1,0 +1,87 @@
+#TitleContainer {
+background-color: white;
+
+    padding-top: 200px;
+    text-align: center;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 96px;
+    line-height: 116px;
+
+    color: #313D49;
+}
+
+#BoxContainer {
+    background-color: white;
+    padding-top: 70px;
+    padding-bottom: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#FilterButton {
+    width: 5%;
+    height: auto;
+    float: right;
+}
+
+.CarCard {
+    padding: 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.CarName {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 767;
+    font-size: 40px;
+    line-height: 48px;
+
+    color: #313D49;
+    font-variation-settings: 'slnt' 0;
+}
+
+.CarImage {
+    width: 100%;
+    height: auto;
+}
+
+.CarPrice {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 35px;
+    line-height: 42px;
+
+    color: #818174;
+
+    padding-bottom: 30px;
+}
+
+.CarBuy {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 767;
+    font-size: 40px;
+    line-height: 48px;
+
+    color: #FFFFFF;
+    font-variation-settings: 'slnt' 0;
+    padding: 20px;
+
+    background: #F58220;
+    border-radius: 60px;
+
+}
+
+#CarContainer {
+    display: flex;
+    justify-content: space-around;
+}
