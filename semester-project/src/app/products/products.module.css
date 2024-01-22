@@ -1,5 +1,5 @@
 #TitleContainer {
-background-color: white;
+background-color: #EEEEEE;
 
     padding-top: 200px;
     text-align: center;
@@ -14,7 +14,7 @@ background-color: white;
 }
 
 #BoxContainer {
-    background-color: white;
+    background-color: #EEEEEE;
     padding-top: 70px;
     padding-bottom: 150px;
     padding-left: 50px;
@@ -29,6 +29,7 @@ background-color: white;
 
 .CarCard {
     padding: 100px;
+    background-color: white;
 
     display: flex;
     flex-direction: column;

@@ -9,7 +9,7 @@ export default function About() {
 
         <div id={styles.TitleContainer}>All Models</div>
         <div id={styles.BoxContainer}>
-            <img src='/images/filter.png' id={styles.FilterButton}></img>
+            
             <div id={styles.CarContainer}>
                 <div className={styles.CarCard}>
                     <div className={styles.CarName}>Mercedes Benz EQS</div>
