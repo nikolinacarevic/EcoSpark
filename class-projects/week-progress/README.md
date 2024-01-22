@@ -10,8 +10,12 @@
 ### Progress 3 ( 12.1. - 18.1. )
 - high-fidelity prototype for Our Products page
 - implementation of Our Products page in progress...
+- high-fidelity prototype for Model Details
+- high-fidelity prototype for Page Not Found
 
 ### Progress 4 ( 19.1. -  )
 - implementation of Our Products page in progress...
 - fixing design of web page
 - adding all functionalities
+- implementation of Model Details page
+- implementation of Page Not Found
