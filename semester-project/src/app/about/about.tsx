@@ -6,14 +6,12 @@ import styles from './about.module.css'
 export default function About() {
   return (
     <>
-      <div className={styles.titleContainer}>
-          <h1 id={styles.mainTitle}>About Us</h1>
-          <img src='/images/aboutUs.png' id={styles.backgroundImage}></img>
-      </div>
-
+    <div className={styles.topPart}>
     <div className={styles.welcomeContainer}>
-      <h1 id={styles.welcomeTitle}>Welcome to EcoSpark – Pioneering Tomorrow's Drive</h1>
-      <p id={styles.welcomeText}>At EcoSpark, we embark on a revolutionary journey towards a sustainable and emission-free future. Nestled at the forefront of innovation, EcoSpark is not merely an electric car company; we are the architects of a cleaner, greener automotive landscape. Our commitment extends beyond manufacturing electric vehicles; we are crafting a tomorrow where transportation is synonymous with environmental responsibility and cutting-edge technology.</p>
+      <h1 id={styles.welcomeTitle}>Welcome to EcoSpark – </h1><p>Pioneering Tomorrow's Drive</p>
+      <p id={styles.welcomeText}>EcoSpark is not merely an electric car company; we are the architects of a cleaner, greener automotive landscape. Our commitment extends beyond manufacturing electric vehicles; we are crafting a tomorrow where transportation is synonymous with environmental responsibility and cutting-edge technology.</p>
+    </div>
+    <img src='/images/image 33.png' id={styles.mainImage}></img>
     </div>
     
     <div className={styles.boxContainer}>

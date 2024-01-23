@@ -52,23 +52,23 @@ function Home() {
             <div id={styles.reasonsContainer}>
                 <p id={styles.reasonTitle}>Why EcoSpark?</p>
                 <div id={styles.reasonRow}>
-                <button className={styles.arrowReasonBox}>&lt;</button>
-                <div className={styles.eachReason}>
-                <img className={styles.reasonImg} src='/images/reason1.png'></img>
-                    <p className={styles.reasonText}>Eco-Friendly and Sustainable Driving</p>
-                </div>
-                <div className={styles.eachReason}>
-                <img className={styles.reasonImg} src='/images/reason2.png'></img>
-                    <p className={styles.reasonText}>Cutting-Edge Technology and Innovation</p>
-                </div>
-                <div className={styles.eachReason}>
-                <img className={styles.reasonImg} src='/images/reason3.png'></img>
-                    <p className={styles.reasonText}>Substantial Cost Savings and Financial Benefits</p>
-                </div>
-                <button className={styles.arrowReasonBox}>&gt;</button>
+                    <div><button className={styles.arrowReasonBox}>&lt;</button></div>
+                    <div className={styles.eachReason}>
+                    <img className={styles.reasonImg} src='/images/reason1.png'></img>
+                       <p className={styles.reasonText}>Eco-Friendly and Sustainable Driving</p>
+                    </div>
+                    <div className={styles.eachReason}>
+                    <img className={styles.reasonImg} src='/images/reason2.png'></img>
+                        <p className={styles.reasonText}>Cutting-Edge Technology and Innovation</p>
+                    </div>
+                    <div className={styles.eachReason}>
+                    <img className={styles.reasonImg} src='/images/reason3.png'></img>
+                        <p className={styles.reasonText}>Substantial Cost Savings and Financial Benefits</p>
+                    </div>
+                    <button className={styles.arrowReasonBox}>&gt;</button>
                 </div>
             </div>
-            </div>
+        </div>
         </>
     );
 }
