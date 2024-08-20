@@ -111,6 +111,10 @@
       transition: background-color 0.3s ease;
       /* Add transition for smooth color change */
     }
+    .navButton:hover {
+      background-color: #FFA93F; 
+      transform: scale(1.1); 
+    }
   }
 
   @media (max-width: 767px) {

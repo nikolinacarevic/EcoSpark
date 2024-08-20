@@ -8,7 +8,6 @@ export default function Contacts() {
     <div className={styles.contactsContainer}>
       <div className={styles.contactsText}>
         <h1>Contact Us</h1>
-        <p>We're thrilled to connect with you! Whether you have questions, suggestions, or just want to chat about the future of electric vehicles, we're here and ready to assist.</p>
       </div>
       <div id={styles.infoBox}>
         <div className={styles.oneInfo}>
@@ -33,6 +32,9 @@ export default function Contacts() {
           </div>
 
         </div>
+      </div>
+      <div className={styles.contactsText}>
+        <p>We're thrilled to connect with you! Whether you have questions, suggestions, or just want to chat about the future of electric vehicles, we're here and ready to assist.</p>
       </div>
       <div id={styles.formBox}>
         <h1>Join our team!</h1>
