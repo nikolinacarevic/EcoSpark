@@ -52,7 +52,9 @@ function Home() {
                         <h3>Try out our cars!</h3>
                         <p>Book a test drive!</p>
                     </div>
+                    <Link href="/products">
                     <button id={styles.bookButton}>BOOK NOW</button>
+                    </Link>
                 </div>
 
                 <div id={styles.reasonsContainer}>

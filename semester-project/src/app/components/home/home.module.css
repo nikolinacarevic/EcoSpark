@@ -140,12 +140,22 @@
         height: auto;
         background: #E06A1A;
         border-radius: 100px;
-        font-family: 'Inter';
+        font-family: 'Inter', sans-serif;
         font-style: normal;
         font-weight: 700;
         font-size: 25px;
         line-height: 42px;
         color: #FFFFFF;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .carButton:hover {
+        transform: scale(1.1); 
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3); 
+        background: #D45A12; 
     }
 
     #bookContainer {
@@ -188,29 +198,23 @@
         height: 50px;
         background: #E06A1A;
         border-radius: 50px;
-    
-        /* Inside auto layout */
-        flex: none;
-        order: 1;
-        flex-grow: 0;
-        z-index: 1;
-    
-        font-family: 'Inter';
+        font-family: 'Inter', sans-serif;
         font-style: normal;
         font-weight: 700;
         font-size: 30px;
-        line-height: inherit;
         text-align: center;
-    
         color: #FFFFFF;
-        font-variation-settings: 'slnt' 0;
-    
-    
-        /* Inside auto layout */
-        flex: none;
-        order: 2;
-        flex-grow: 0;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
         z-index: 2;
+    }
+    
+    #bookButton:hover {
+        transform: scale(1.05); 
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3); 
+        background: #D45A12; 
     }
     #reasonsContainer {
         display: flex;
