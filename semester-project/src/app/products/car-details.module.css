@@ -43,14 +43,14 @@
   .details h1 {
     font-size: 32px;
     font-weight: 700;
-    color: #ff6700;
+    color: black;
     margin-bottom: 20px;
   }
   
   .price {
     font-size: 22px;
     font-weight: 600;
-    color: black;
+    color: rgb(56, 55, 55);
     margin-bottom: 15px;
   }
   
