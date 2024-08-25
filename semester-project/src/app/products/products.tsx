@@ -31,6 +31,8 @@ export default function Products() {
                 <button className={`${styles.filterButton} ${filter === 'mercedes' ? styles.active : ''}`} onClick={() => filterCars('mercedes')}>Mercedes</button>
                 <button className={`${styles.filterButton} ${filter === 'škoda' ? styles.active : ''}`} onClick={() => filterCars('škoda')}>Škoda</button>
                 <button className={`${styles.filterButton} ${filter === 'volkswagen' ? styles.active : ''}`} onClick={() => filterCars('volkswagen')}>Volkswagen</button>
+                <button className={`${styles.filterButton} ${filter === 'bmw' ? styles.active : ''}`} onClick={() => filterCars('bmw')}>BMW</button>
+                <button className={`${styles.filterButton} ${filter === 'tesla' ? styles.active : ''}`} onClick={() => filterCars('tesla')}>Tesla</button>
             </div>
 
             <div id={styles.BoxContainer}>
