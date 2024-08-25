@@ -13,8 +13,8 @@ export default function Contacts() {
         <div className={styles.oneInfo}>
           <img className={styles.mailImage} src='/images/mail.png'></img>
           <div>
-          <p className={styles.boxText}>info@ecospark.hr</p>
-          <p className={styles.boxText}>hiring@ecospark.hr</p>
+            <p className={styles.boxText}>info@ecospark.hr</p>
+            <p className={styles.boxText}>hiring@ecospark.hr</p>
           </div>
         </div>
         <div className={styles.oneInfoMiddle}>
@@ -37,22 +37,19 @@ export default function Contacts() {
         <p>We're thrilled to connect with you! Whether you have questions, suggestions, or just want to chat about the future of electric vehicles, we're here and ready to assist.</p>
       </div>
       <div id={styles.formBox}>
-        <h1>Join our team!</h1>
+        <h1>Join Our Team!</h1>
         <form id={styles.inputForm}>
-          <input type='text' placeholder='Name'></input>
-          <input type='text' placeholder='Surname'></input>
-          <input type='email' placeholder='E-mail'></input>
+          <input type='text' placeholder='Name' />
+          <input type='text' placeholder='Surname' />
+          <input type='email' placeholder='E-mail' />
           <div className={styles.buttonBox}>
-          <button id={styles.formButton}>
-          + 
-          </button>
-          <p>Upload your resume</p>
+            <button id={styles.formButton}>+</button>
+            <p>Upload Your Resume</p>
           </div>
-          <button id={styles.submitButton}>
-            Apply!
-          </button>
+          <button id={styles.submitButton}>Apply!</button>
         </form>
       </div>
+
     </div>
   );
 }
