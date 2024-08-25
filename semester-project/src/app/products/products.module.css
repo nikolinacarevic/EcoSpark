@@ -1,10 +1,19 @@
-#TextContainer {
+.TextContainer {
     text-align: center;
-    margin-bottom: 40px;
 
-    padding-top: 150px;
-    padding-bottom: 15px;
+    padding-top: 200px;
+    padding-bottom: 100px;
     text-align: center;
+
+    background: 
+        linear-gradient(
+            rgba(222, 130, 25, 0.5), 
+            rgba(6, 6, 6, 0.5) 
+        ),
+        url('/images/background.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #TitleContainer {
@@ -15,14 +24,14 @@
     line-height: 116px;
     letter-spacing: 1px;
 
-    color: #313D49;
+    color: rgb(228, 228, 228);
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
 }
 
 #SmallText {
     font-family: 'Inter';
     font-size: 18px;
-    color: #383b3d;
+    color: #9a9c9e;
 }
 
 #FilterContainer {

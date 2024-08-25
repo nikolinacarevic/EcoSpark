@@ -21,7 +21,7 @@ export default function Products() {
 
     return (
         <>
-            <div id={styles.TextContainer}>
+            <div className={styles.TextContainer}>
                 <div id={styles.TitleContainer}>Our Models</div>
                 <p id={styles.SmallText}>Explore our range of eco-friendly vehicles, tailored to your lifestyle.</p>
             </div>
