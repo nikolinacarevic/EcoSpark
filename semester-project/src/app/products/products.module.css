@@ -1,17 +1,59 @@
-#TitleContainer {
-    background-color: #EEEEEE;
+#TextContainer {
+    text-align: center;
+    margin-bottom: 40px;
 
     padding-top: 150px;
+    padding-bottom: 15px;
     text-align: center;
+}
 
+#TitleContainer {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
-    font-size: 96px;
+    font-size: 64px; 
     line-height: 116px;
+    letter-spacing: 1px;
 
     color: #313D49;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
 }
+
+#SmallText {
+    font-family: 'Inter';
+    font-size: 18px;
+    color: #383b3d;
+}
+
+#FilterContainer {
+    background-color: #EEEEEE;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+.filterButton {
+    background-color: #6C757D; /* Tamno siva boja */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    margin: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filterButton:hover {
+    background-color: #5A6268; 
+}
+
+.active {
+    background-color: #343A40;
+}
+
 
 .productList {
     display: flex;
@@ -26,7 +68,7 @@
 
 #BoxContainer {
     background-color: #EEEEEE;
-    padding-top: 70px;
+    padding-top: 10px;
     padding-bottom: 150px;
     padding-left: 50px;
     padding-right: 50px;

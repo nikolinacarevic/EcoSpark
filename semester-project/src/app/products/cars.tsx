@@ -1,6 +1,7 @@
 export interface Car {
     id: number;
     name: string;
+    brand: string;
     price: string;
     image: string;
     image1: string;
@@ -15,6 +16,7 @@ export interface Car {
     {
       id: 1,
       name: 'Mercedes Benz EQS',
+      brand: 'Mercedes',
       price: 'from 105 000 €',
       image: '/images/mercedes.png',
       image1: '/images/mercedes1.png',
@@ -27,6 +29,7 @@ export interface Car {
     {
       id: 2,
       name: 'Škoda Enyaq',
+      brand: 'Škoda',
       price: 'from 48 458 €',
       image: '/images/skoda.png',
       image1: '/images/skoda1.png',
@@ -39,6 +42,7 @@ export interface Car {
     {
       id: 3,
       name: 'Volkswagen ID.3',
+      brand: 'Volkswagen',
       price: 'from 41 950 €',
       image: '/images/vw.png',
       image1: '/images/vw1.png',
