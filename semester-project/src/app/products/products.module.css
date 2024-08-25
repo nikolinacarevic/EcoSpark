@@ -139,3 +139,89 @@
 .CarContainer {
     margin: 5px;
 }
+
+@media (max-width: 767px) {
+    .TextContainer {
+        text-align: center;
+        padding-top: 100px; 
+        padding-bottom: 50px;
+        background: 
+            linear-gradient(
+                rgba(222, 130, 25, 0.5), 
+                rgba(6, 6, 6, 0.5)
+            ),
+            url('/images/background.png'); 
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    #TitleContainer {
+        font-size: 36px; 
+        line-height: 56px; 
+        letter-spacing: 0.5px;
+        color: rgb(228, 228, 228);
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+
+    #SmallText {
+        font-size: 14px;
+        color: #9a9c9e;
+        margin-bottom: 20px;
+    }
+
+    #FilterContainer {
+        flex-wrap: wrap; 
+        justify-content: center;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .filterButton {
+        padding: 8px 16px; 
+        font-size: 14px;
+        margin: 5px 10px; 
+    }
+
+    .productList {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 10px; 
+        gap: 16px;
+    }
+
+    #BoxContainer {
+        padding: 20px 10px; 
+        padding-bottom: 50px;
+    }
+
+    .CarCard {
+        width: 100%; 
+        height: auto;
+        margin-bottom: 20px;
+        padding: 16px;
+    }
+
+    .CarName {
+        font-size: 18px; 
+        line-height: 28px;
+        margin-bottom: 10px;
+    }
+
+    .CarImage {
+        width: 100%; 
+        height: auto; 
+        margin-bottom: 15px;
+    }
+
+    .CarPrice {
+        font-size: 20px; 
+        line-height: 32px;
+        padding-bottom: 5px;
+    }
+
+    .CarContainer {
+        margin: 10px 0;
+    }
+}
