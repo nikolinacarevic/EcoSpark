@@ -13,26 +13,7 @@ import { createClient, Entry } from 'contentful';
 import { error } from 'console';
 
 export default function Products() {
-    type CarEntry = Entry[];
-    const [cars, setCars] = useState<CarEntry>([])
-
-    const client  = createClient({space: "6ufbm13204ba", accessToken: "eJoEhbMMi_XEcuklMASvT_lpgd-l5FbyEz_gE55T49A"})
-
-    useEffect(()=> {
-        const getAllEntries = async () => {
-            try {
-                await client.getEntries().then((entries) => {
-                    console.log(entries)
-                    setCars(entries.items)
-                    console.log(cars)
-                })
-            } catch {
-                console.log(error)
-
-            }
-        }
-        getAllEntries()
-    }, [])
+    
 
     const [filter, setFilter] = useState('all');
 
