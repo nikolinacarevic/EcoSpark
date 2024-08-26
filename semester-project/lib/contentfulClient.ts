@@ -58,14 +58,16 @@ interface CarCollectionResponse {
     details: string;
     description: string;
   }  
+  const CONTENTFUL_ACCESS_TOKEN = "KVM5eBiqjmHMvGa49xusjSddyw5Dbn8OXIWDmYli45U"
+const CONTENTFUL_SPACE_ID = "6ufbm13204ba"
 
   export const fetchCars = async (): Promise<CarItem[]> => {
     const response = await fetch(
-      `https://graphql.contentful.com/content/v1/spaces/${process.env.CONTENTFUL_SPACE_ID}/environments/master`,
+      `https://graphql.contentful.com/content/v1/spaces/${CONTENTFUL_SPACE_ID}/environments/master`,
       {
         method: "POST",
         headers: {
-          'Authorization': `Bearer eJoEhbMMi_XEcuklMASvT_lpgd-l5FbyEz_gE55T49A`,
+          'Authorization': `Bearer ${CONTENTFUL_ACCESS_TOKEN}`,
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({ query: gqlAllProductsQuery }),
