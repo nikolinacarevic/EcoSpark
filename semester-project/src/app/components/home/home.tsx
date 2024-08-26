@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import styles from "./home.module.css";
 import Header from '../header/header';
 import Link from 'next/link';
-import { products, Car } from '../../products/cars';
+import { products, Car } from '../../(contentful)/products/cars';
 
 
 function Home() {
