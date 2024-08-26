@@ -9,6 +9,10 @@
         align-items: center; /* Center items vertically within the heroSection */
         justify-content: space-between;
     }
+
+    .arrowReasonBox {
+        display: none;
+    }
     .introContainer {
         display: flex;
         flex-direction: column;

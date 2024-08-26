@@ -79,12 +79,12 @@ export default function Products() {
                     className={styles.CarImage}
                     src={car.image}
                     alt={car.name}
-                    width={500}  // Postavi širinu slike ako koristiš Next.js Image komponentu
-                    height={300} // Postavi visinu slike ako koristiš Next.js Image komponentu
+                    width={500}  
+                    height={300} 
                   />
                   <div className={styles.carText}>
                     <p className={styles.CarName}>{car.name}</p>
-                    <p className={styles.CarPrice}>{car.price}</p>
+                    <p className={styles.CarPrice}>From {car.price} €</p>
                   </div>
                 </div>
               </Link>
