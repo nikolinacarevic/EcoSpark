@@ -1,14 +1,39 @@
 "use client";
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Header from '../components/header/header';
 import Footer from '../components/footer/footer';
 import styles from './products.module.css'
 import { products, Car } from './cars';
+import Cars from './cars';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Link from 'next/link';
+import { createClient, Entry } from 'contentful';
+import { error } from 'console';
 
 export default function Products() {
+    type CarEntry = Entry[];
+    const [cars, setCars] = useState<CarEntry>([])
+
+    const client  = createClient({space: "6ufbm13204ba", accessToken: "eJoEhbMMi_XEcuklMASvT_lpgd-l5FbyEz_gE55T49A"})
+
+    useEffect(()=> {
+        const getAllEntries = async () => {
+            try {
+                await client.getEntries().then((entries) => {
+                    console.log(entries)
+                    setCars(entries.items)
+                    console.log(cars)
+                })
+            } catch {
+                console.log(error)
+
+            }
+        }
+        getAllEntries()
+    }, [])
+
     const [filter, setFilter] = useState('all');
 
     const filterCars = (brand: string) => {
