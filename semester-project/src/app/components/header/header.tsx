@@ -46,13 +46,13 @@ function Header() {
             <Link href="/">
                 <button className={styles.navButton}>Home</button>
             </Link>
-            <Link href="./about">
+            <Link href="/about">
                 <button className={styles.navButton}>About</button>
             </Link>
             <Link href="/products">
                 <button className={styles.navButton}>Products</button>
             </Link>
-            <Link href="./contacts">
+            <Link href="/contacts">
                 <button className={styles.navButton}>Contacts</button>
             </Link>
         </div>
