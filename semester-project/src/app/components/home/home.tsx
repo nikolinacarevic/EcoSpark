@@ -4,7 +4,9 @@ import React, { useEffect, useState } from 'react';
 import styles from "./home.module.css";
 import Header from '../header/header';
 import Link from 'next/link';
+import { useSwipeable } from 'react-swipeable';
 import { products, Car } from '../../(contentful)/products/cars';
+import { useMediaQuery } from 'react-responsive';
 
 
 function Home() {
@@ -14,15 +16,37 @@ function Home() {
     }
 
     const [randomCars, setRandomCars] = useState<Car[]>([]);
+    const [currentCarIndex, setCurrentCarIndex] = useState(0);
 
     useEffect(() => {
         const selectedCars = getRandomCars(products, 3);
         setRandomCars(selectedCars);
     }, []);
 
+    const handleSwipeLeft = () => {
+        setCurrentCarIndex((prevIndex) =>
+            prevIndex < randomCars.length - 1 ? prevIndex + 1 : 0
+        );
+    };
+
+    const handleSwipeRight = () => {
+        setCurrentCarIndex((prevIndex) =>
+            prevIndex > 0 ? prevIndex - 1 : randomCars.length - 1
+        );
+    };
+
+
+    const isMobile = useMediaQuery({ query: '(max-width: 767px)' });
+
+    const handlers = isMobile ? useSwipeable({
+        onSwipedLeft: handleSwipeLeft,
+        onSwipedRight: handleSwipeRight,
+        trackMouse: true, // Enable mouse dragging as well
+    }) : {};
+
     return (
         <>
-            <div className={styles.homeContainer}>
+            <div className={styles.homeContainer} {...handlers}>
                 <div className={styles.heroSection}>
                     <div className={styles.introContainer}>
                         <h1 id={styles.introTitle}>EcoSpark Automotive</h1>
@@ -34,7 +58,7 @@ function Home() {
                 
                 <div id={styles.carsContainer}>
                     <p id={styles.carsText}>Enjoy vehicles at best prices!</p>
-                    <div id={styles.carRow}>
+                    <div id={styles.carRow} style={{ transform: `translateX(-${currentCarIndex * 100}%)`, transition: 'transform 0.3s ease-in-out' }}>
                         {randomCars.map(car => (
                             <div key={car.id} className={styles.carBox}>
                                 <img className={styles.carImage} src={car.image} alt={car.name} />

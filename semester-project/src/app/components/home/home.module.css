@@ -77,6 +77,9 @@
         height: auto;
         padding-left: 4%;
         padding-right: 4%;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory; 
+        -webkit-overflow-scrolling: touch;
     }
 
     .arrowCarBox {
@@ -114,7 +117,9 @@
         justify-content: space-around;
         padding-top: 3%;
         padding-bottom: 3%;
+        scroll-snap-align: start;
     }
+    
     
     .carImage {
         width: 250px;
@@ -371,6 +376,7 @@
         padding-right: 10px;
         width: 100%;
         height: auto;
+        gap: 5%;
     }
 
 
@@ -387,7 +393,7 @@
         font-variation-settings: 'slnt' 0;
     }
 
-    .carBox:nth-child(2) {
+    .carBox {
         position: relative;
         flex: 1;
         background: rgba(255, 255, 255, 0.57);
@@ -396,24 +402,31 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        padding-top: 30px;
-        padding-bottom: 26px;
-        margin: 10px;
-        margin: 10px;
-    }
+        padding-top: 6%;
+        padding-bottom: 3%;
+        
+    } 
 
-     .carBox:not(:nth-child(2),:first-child,:last-child){
-        display: none;
+    .carBox {
+        flex: 0 0 100%; /* Each item takes full width */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        scroll-snap-align: start;
     }
-
-    .carBox .carImage:first-child{
+    .carImage {
         width: 60%;
         height: auto;
+        padding-bottom: 8%;
     }
+
+
+    
 
     .arrowCarBox {
         font-size: 50px;
-        color: rgba(255, 255, 255, 0.57);
+        color: rgba(8, 1, 1, 0.57);
         font-weight: 800;
         
     }
@@ -478,7 +491,6 @@
     }
     
     #bookButton {
-        width: 44%;
         height: auto;
         background: #E06A1A;
         border-radius: 20px;
@@ -516,11 +528,11 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         width: 100%;
         margin-top: 10px;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 10%;
+        padding-right: 10%;
     }
     
     
@@ -537,10 +549,10 @@
     }
 
     .arrowReasonBox {
-        font-size: 50px;
+        font-size: 40px;
         color: rgb(0, 0, 0);
-        font-weight: 800;
-        
+        font-weight: 700;
+        margin-bottom: 13%;
     }
     
     .arrowReasonBox:active {
