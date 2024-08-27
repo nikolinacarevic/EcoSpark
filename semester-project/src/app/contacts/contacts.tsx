@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Image from 'next/image';
 import { useState, useRef } from 'react';
@@ -8,27 +8,28 @@ import styles from './contacts.module.css';
 
 export default function Contacts() {
   const [fileName, setFileName] = useState('');
-  const [isModalOpen, setIsModalOpen] = useState(false);  // Dodano stanje za modal
-  const fileInputRef = useRef(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
   const handleButtonClick = () => {
-    fileInputRef.current?.click();
+    fileInputRef.current?.click(); 
   };
 
-  const handleFileChange = (event) => {
-    const file = event.target.files[0];
+  const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0];
     if (file) {
       setFileName(file.name);
     }
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();  // Sprječava ponovno učitavanje stranice
-    setIsModalOpen(true);  // Otvara modal
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setIsModalOpen(true); 
   };
 
   const handleCloseModal = () => {
-    setIsModalOpen(false);  // Zatvara modal
+    setIsModalOpen(false); 
   };
 
   return (
@@ -89,7 +90,6 @@ export default function Contacts() {
         </form>
       </div>
 
-      {/* Modal */}
       {isModalOpen && (
         <div className={styles.modalOverlay}>
           <div className={styles.modalContent}>
