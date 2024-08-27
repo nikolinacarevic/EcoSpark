@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './products.module.css';
-import { fetchCars } from '../../../../lib/contentfulClient'; // Uvezi funkciju iz lib/contentfulClient
+import { fetchCars } from '../../../../lib/contentfulClient'; 
 
 interface Car {
   id: string;
@@ -26,7 +26,6 @@ export default function Products() {
 
   useEffect(() => {
     const loadCars = async () => {
-        console.log("ej")
       const fetchedCars = await fetchCars();
       setCars(fetchedCars.map((car) => ({
         id: car.sys.id,
@@ -73,7 +72,7 @@ export default function Products() {
         <ul className={styles.productList}>
           {filteredProducts.map(car => (
             <li className={styles.CarContainer} key={car.id}>
-              <Link href={`/products/${car.id}`}>
+              <Link href={`${car.link}`}>
                 <div className={styles.CarCard}>
                   <Image
                     className={styles.CarImage}

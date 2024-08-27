@@ -75,6 +75,5 @@ const CONTENTFUL_SPACE_ID = "6ufbm13204ba"
     );
     
     const json = await response.json();
-    console.log(response.json())
     return json.data.carBoxCollection.items;
   };
