@@ -24,6 +24,9 @@ export default function CarDetails({
   const [showTestDriveModal, setShowTestDriveModal] = useState<boolean>(false);
   const [testDriveData, setTestDriveData] = useState({ date: '', time: '', contact: '' });
   const [submitted, setSubmitted] = useState<boolean>(false);
+  const [showPaymentModal, setShowPaymentModal] = useState<boolean>(false);
+  const [paymentData, setPaymentData] = useState({ cardNumber: '', name: '', address: '' });
+  const [purchaseCompleted, setPurchaseCompleted] = useState<boolean>(false);
 
   const handleImageClick = (image: string) => {
     setSelectedImage(image);
@@ -40,12 +43,7 @@ export default function CarDetails({
   const handleTestDriveSubmit = () => {
     setSubmitted(true);
     setShowTestDriveModal(false);
-
   };
-
-  const [showPaymentModal, setShowPaymentModal] = useState<boolean>(false);
-  const [paymentData, setPaymentData] = useState({ cardNumber: '', name: '', address: '' });
-  const [purchaseCompleted, setPurchaseCompleted] = useState<boolean>(false);
 
   const handleBuyNowClick = () => {
     setShowPaymentModal(true);
@@ -54,10 +52,13 @@ export default function CarDetails({
   const handlePaymentSubmit = () => {
     setPurchaseCompleted(true);
     setShowPaymentModal(false);
-    // Ovdje možete dodati logiku za slanje podataka na backend ako je potrebno
   };
 
-
+  // Funkcija za zatvaranje modala
+  const handleCloseModal = () => {
+    setShowTestDriveModal(false);
+    setShowPaymentModal(false);
+  };
 
   const Description = ({ description }: { description: string }) => {
     return (
@@ -127,10 +128,8 @@ export default function CarDetails({
           <h1>{car.name}</h1>
           <p className={styles.price}>Price: {car.price}</p>
           <div className={styles.buttons}>
-            <div className={styles.buttons}>
-              <button className={styles.testDriveButton} onClick={handleTestDriveClick}>Test Drive</button>
-              <button className={styles.buyButton} onClick={handleBuyNowClick}>Buy Now</button>
-            </div>
+            <button className={styles.testDriveButton} onClick={handleTestDriveClick}>Test Drive</button>
+            <button className={styles.buyButton} onClick={handleBuyNowClick}>Buy Now</button>
           </div>
           <div className={styles.tabs}>
             <ul className={styles.tabList}>
@@ -189,7 +188,10 @@ export default function CarDetails({
             value={testDriveData.contact}
             onChange={(e) => setTestDriveData({ ...testDriveData, contact: e.target.value })}
           />
-          <button onClick={handleTestDriveSubmit}>Podnesi</button>
+          <div className={styles.modalButtons}>
+            <button onClick={handleTestDriveSubmit} className={styles.modalButton}>Submit</button>
+            <button onClick={handleCloseModal} className={styles.closeButton}>Close</button>
+          </div>
         </div>
       )}
 
@@ -216,7 +218,10 @@ export default function CarDetails({
             value={paymentData.address}
             onChange={(e) => setPaymentData({ ...paymentData, address: e.target.value })}
           />
-          <button onClick={handlePaymentSubmit}>Complete Purchase</button>
+          <div className={styles.modalButtons}>
+            <button onClick={handlePaymentSubmit} className={styles.modalButton}>Complete</button>
+            <button onClick={handleCloseModal} className={styles.closeButton}>Close</button>
+          </div>
         </div>
       )}
 

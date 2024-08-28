@@ -205,15 +205,6 @@
   box-sizing: border-box;
 }
 
-.modal button {
-  padding: 10px 20px;
-  background-color: #F58220;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
 .thankYouMessage {
   position: fixed;
   top: 20px;
@@ -250,14 +241,7 @@
   box-sizing: border-box;
 }
 
-.modal button {
-  padding: 10px 20px;
-  background-color: #F58220;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
+
 
 .thankYouMessage {
   position: fixed;
@@ -269,6 +253,31 @@
   padding: 10px 20px;
   border-radius: 5px;
   z-index: 1000;
+}
+
+.modalButtons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modalButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #F58220;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.closeButton {
+  margin-top: 20px;
+  border: 2px solid #F58220; 
+  padding: 10px 20px;
+  background-color: white;
+  color: #F58220;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 
