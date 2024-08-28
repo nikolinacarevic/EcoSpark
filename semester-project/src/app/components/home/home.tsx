@@ -1,13 +1,11 @@
 'use client'
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import styles from "./home.module.css";
-import Header from '../header/header';
 import Link from 'next/link';
 import { useSwipeable } from 'react-swipeable';
 import { products, Car } from '../../(contentful)/products/cars';
 import { useMediaQuery } from 'react-responsive';
-
 
 function Home() {
     function getRandomCars(products: Car[], count: number): Car[] {
@@ -17,11 +15,20 @@ function Home() {
 
     const [randomCars, setRandomCars] = useState<Car[]>([]);
     const [currentCarIndex, setCurrentCarIndex] = useState(0);
+    const [currentReasonIndex, setCurrentReasonIndex] = useState(0);
+
+    const reasonRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         const selectedCars = getRandomCars(products, 3);
         setRandomCars(selectedCars);
     }, []);
+
+    useEffect(() => {
+        if (reasonRef.current) {
+            reasonRef.current.scrollLeft = currentReasonIndex * reasonRef.current.clientWidth;
+        }
+    }, [currentReasonIndex]);
 
     const handleSwipeLeft = () => {
         setCurrentCarIndex((prevIndex) =>
@@ -35,18 +42,29 @@ function Home() {
         );
     };
 
+    const handleReasonLeft = () => {
+        setCurrentReasonIndex((prevIndex) =>
+            prevIndex > 0 ? prevIndex - 1 : 2
+        );
+    };
+
+    const handleReasonRight = () => {
+        setCurrentReasonIndex((prevIndex) =>
+            prevIndex < 2 ? prevIndex + 1 : 0
+        );
+    };
 
     const isMobile = useMediaQuery({ query: '(max-width: 767px)' });
 
-    const handlers = isMobile ? useSwipeable({
+    const handlers = useSwipeable({
         onSwipedLeft: handleSwipeLeft,
         onSwipedRight: handleSwipeRight,
-        trackMouse: true, // Enable mouse dragging as well
-    }) : {};
+        trackMouse: true,
+    });
 
     return (
         <>
-            <div className={styles.homeContainer} {...handlers}>
+            <div className={styles.homeContainer} {...(isMobile ? handlers : {})}>
                 <div className={styles.heroSection}>
                     <div className={styles.introContainer}>
                         <h1 id={styles.introTitle}>EcoSpark Automotive</h1>
@@ -77,14 +95,14 @@ function Home() {
                         <p>Book a test drive!</p>
                     </div>
                     <Link href="/products">
-                    <button id={styles.bookButton}>BOOK NOW</button>
+                        <button id={styles.bookButton}>BOOK NOW</button>
                     </Link>
                 </div>
 
                 <div id={styles.reasonsContainer}>
-                    <p id={styles.reasonTitle}>Why EcoSpark?</p>
-                    <div id={styles.reasonRow}>
-                        <button className={styles.arrowReasonBox}>&lt;</button>
+                <p id={styles.reasonTitle}>Why EcoSpark?</p>
+                    <button className={`${styles.arrowReasonBox} ${styles.left}`} onClick={handleReasonLeft}>&lt;</button>
+                    <div id={styles.reasonRow} ref={reasonRef}>
                         <div className={styles.eachReason}>
                             <img className={styles.reasonImg} src='/images/reason1.png' alt="Reason 1" />
                             <p className={styles.reasonText}>Eco-Friendly and Sustainable Driving</p>
@@ -97,8 +115,8 @@ function Home() {
                             <img className={styles.reasonImg} src='/images/reason3.png' alt="Reason 3" />
                             <p className={styles.reasonText}>Substantial Cost Savings and Financial Benefits</p>
                         </div>
-                        <button className={styles.arrowReasonBox}>&gt;</button>
                     </div>
+                    <button className={`${styles.arrowReasonBox} ${styles.right}`} onClick={handleReasonRight}>&gt;</button>
                 </div>
             </div>
         </>

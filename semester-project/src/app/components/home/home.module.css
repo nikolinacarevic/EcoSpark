@@ -296,15 +296,15 @@
 }
 
 @media (max-width: 767px) {
-
     .heroSection {
         padding-top: 100px;
         height: auto;
         box-sizing: border-box;
-        display: flex; /* Add this line to enable flexbox */
+        display: flex; /* Enable flexbox */
         align-items: center; /* Center items vertically within the heroSection */
         flex-direction: column-reverse;
     }
+
     .introContainer {
         padding-top: 12px;
         padding-bottom: 10px;
@@ -317,7 +317,7 @@
         background-color: #EEEEEE;
         border-radius: 20px;
     }
-    
+
     .mobileIntroTitle {
         width: 100%;
         height: auto;
@@ -337,6 +337,7 @@
     #introTitle {
         display: none;
     }
+
     #introText {
         width: 100%;
         padding-left: 10%;
@@ -344,17 +345,17 @@
         text-align: center;
         font-family: 'Inter';
         font-style: normal;
-        font-weight:bold;
+        font-weight: bold;
         font-size: 18px;
         line-height: 34px;
         color: #313D49;
         mix-blend-mode: normal;
-        /* Inside auto layout */
         flex: none;
         order: 1;
         align-self: stretch;
         flex-grow: 0;
     }
+
     #mainImage {
         width: 250px;
         height: auto;
@@ -370,6 +371,7 @@
         padding: 0 20px;
         box-sizing: border-box;
     }
+
     #carRow {
         display: flex;
         padding-left: 10px;
@@ -378,13 +380,12 @@
         height: auto;
         gap: 5%;
         overflow-x: auto; /* Enable horizontal scrolling */
-    scroll-snap-type: x mandatory; /* Enable snap scrolling */
-    scroll-behavior: smooth; /* Smooth scroll transition */
-    -webkit-overflow-scrolling: touch;
-    padding: 10px 0;
-    box-sizing: border-box;
+        scroll-snap-type: x mandatory; /* Enable snap scrolling */
+        scroll-behavior: smooth; /* Smooth scroll transition */
+        -webkit-overflow-scrolling: touch;
+        padding: 10px 0;
+        box-sizing: border-box;
     }
-
 
     #carsText {
         width: 100%;
@@ -400,21 +401,6 @@
     }
 
     .carBox {
-        flex: 0 0 auto; /* Each car takes full width of the container */
-        width: 100%;
-    scroll-snap-align: start; /* Align each car to the start */
-        background: rgba(255, 255, 255, 0.57);
-        border-radius: 30px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding-top: 6%;
-        padding-bottom: 3%;
-        box-sizing: border-box;
-    } 
-
-    .carBox {
         flex: 0 0 100%; /* Each item takes full width */
         display: flex;
         flex-direction: column;
@@ -422,27 +408,28 @@
         justify-content: center;
         scroll-snap-align: start;
         width: 100%;
+        background: rgba(255, 255, 255, 0.57);
+        border-radius: 30px;
+        padding-top: 6%;
+        padding-bottom: 3%;
+        box-sizing: border-box;
     }
+
     .carImage {
         width: 60%;
         height: auto;
         padding-bottom: 8%;
     }
 
-
-    
-
     .arrowCarBox {
         font-size: 50px;
         color: rgba(8, 1, 1, 0.57);
         font-weight: 800;
-        
     }
-    
+
     .arrowCarBox:active {
         color: rgb(120, 120, 120);
     }
-
 
     .carName {
         font-family: 'Inter';
@@ -454,8 +441,8 @@
         margin-bottom: 17px;
         margin-top: 20px;
     }
-    
-    .carButton{
+
+    .carButton {
         width: 100px;
         height: auto;
         background: #E06A1A;
@@ -467,7 +454,7 @@
         line-height: 42px;
         color: #FFFFFF;
     }
-    
+
     #bookContainer {
         display: flex;
         flex-direction: column;
@@ -479,9 +466,9 @@
         gap: 20px;
         isolation: isolate;
         position: relative;
-        width: 100%px;
+        width: 100%;
     }
-    
+
     #bookTitle1 {
         width: 100%;
         font-family: 'Inter';
@@ -492,12 +479,8 @@
         text-align: center;
         color: #000000;
         font-variation-settings: 'slnt' 0;
-        flex: none;
-        order: 0;
-        flex-grow: 0;
-        z-index: 0;
     }
-    
+
     #bookButton {
         height: auto;
         background: #E06A1A;
@@ -505,15 +488,11 @@
         font-family: 'Inter';
         font-style: normal;
         font-weight: 700;
-        font-size: 22ypx;
+        font-size: 22px;
         line-height: inherit;
         text-align: center;
         color: #FFFFFF;
         font-variation-settings: 'slnt' 0;
-        flex: none;
-        order: 2;
-        flex-grow: 0;
-        z-index: 2;
         padding: 7px;
         margin-bottom: 15px;
     }
@@ -529,76 +508,84 @@
         padding-top: 20px;
         padding-bottom: 20px;
         background-color: #f5f5f5;
-    }
-    
-    #reasonRow {
-        text-align: center;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin-top: 10px;
-        padding-left: 10%;
-        padding-right: 10%;
-    }
-    
-    
-    .eachReason:nth-child(2) {
-        width: 550px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0 20px;
+        overflow: hidden; /* Hide overflow to keep arrows and content aligned */
     }
 
-    .eachReason:not(:first-child,:nth-child(2),:last-child) {
-        display: none;
-    }
-
-    .arrowReasonBox {
-        font-size: 40px;
-        color: rgb(0, 0, 0);
-        font-weight: 700;
-        margin-bottom: 13%;
-    }
-    
-    .arrowReasonBox:active {
-        color: rgb(94, 94, 94);
-    }
-    
-    .reasonText {
-        width: 65%;
-        /* Make the text fill the width of eachReason */
-        text-align: center;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 550;
-        font-size: 18px;
-        line-height: 22px;
-        color: #000000;
-        font-variation-settings: 'slnt' 0;
-        margin-top: 10px;
-    }
-    
-    .reasonImg {
-        width: 30%;
-        max-width: 304px;
-        /* Limit the image width */
-        height: auto;
-        /* Maintain the image aspect ratio */
-    }
-    
     #reasonTitle {
         font-family: 'Inter';
         font-style: normal;
         font-weight: 573;
-        font-size: 23px;
-        line-height: inherit;
+        font-size: 20px; /* Make title smaller */
+        line-height: 28px; /* Adjust line-height */
         text-align: center;
-    
         color: #000000;
-        font-variation-settings: 'slnt' 0;
+        margin-bottom: 10px; /* Space below the title */
     }
-    
+
+    #reasonRow {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        overflow-x: auto; /* Allow horizontal scrolling */
+        scroll-snap-type: x mandatory; /* Enable snap scrolling */
+        padding: 0 50px; /* Add padding for arrows */
+    }
+
+    .eachReason {
+        flex: 0 0 auto; /* Prevent the items from shrinking */
+        width: 200px; /* Set a smaller width for the reason blocks */
+        scroll-snap-align: center; /* Center-align items during scrolling */
+        text-align: center;
+        margin: 0 15px; /* Space between items */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .reasonImg {
+        width: 80%; /* Adjust image width */
+        max-width: 120px; /* Limit the image width */
+        height: auto;
+    }
+
+    .reasonText {
+        width: 100%; /* Make the text fill the width of eachReason */
+        text-align: center;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 550;
+        font-size: 16px; /* Adjust font size for better readability */
+        line-height: 22px; /* Ensure proper line spacing */
+        color: #000000;
+        margin-top: 10px; /* Space above the text */
+    }
+
+    .arrowReasonBox {
+        position: absolute;
+        top: 50%;
+        font-size: 40px;
+        color: rgb(0, 0, 0);
+        font-weight: 700;
+        cursor: pointer;
+        background: rgba(255, 255, 255, 0.8);
+        border: none;
+        padding: 10px;
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+    .arrowReasonBox.left {
+        left: 10px; /* Position left arrow */
+    }
+
+    .arrowReasonBox.right {
+        right: 10px; /* Position right arrow */
+    }
+
+    .arrowReasonBox:active {
+        color: rgb(94, 94, 94);
+    }
 }
+
