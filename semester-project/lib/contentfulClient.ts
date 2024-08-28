@@ -75,6 +75,9 @@ const CONTENTFUL_SPACE_ID = "6ufbm13204ba"
     );
     
     const json = await response.json();
+<<<<<<< HEAD
 
+=======
+>>>>>>> afe632a347fe95ff8b897e113c8b4f7d8185017e
     return json.data.carBoxCollection.items;
   };
