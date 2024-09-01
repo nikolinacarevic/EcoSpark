@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Footer from "@/app/components/footer/footer";
 import Header from "@/app/components/header/header";
@@ -27,6 +27,17 @@ export default function CarDetails({
   const [showPaymentModal, setShowPaymentModal] = useState<boolean>(false);
   const [paymentData, setPaymentData] = useState({ cardNumber: '', name: '', address: '' });
   const [purchaseCompleted, setPurchaseCompleted] = useState<boolean>(false);
+
+  // useEffect za setTimeout na submit
+  useEffect(() => {
+    if (submitted) {
+      const timer = setTimeout(() => {
+        setSubmitted(false);
+      }, 3000); // 3 sekunde
+
+      return () => clearTimeout(timer); // Čišćenje timeouta ako se komponenta unmountuje
+    }
+  }, [submitted]);
 
   const handleImageClick = (image: string) => {
     setSelectedImage(image);
@@ -195,7 +206,11 @@ export default function CarDetails({
         </div>
       )}
 
-      {submitted && <div className={styles.thankYouMessage}>Thank you, we will contact you shortly.</div>}
+      {submitted && 
+        <div className={styles.thankYouMessage}>
+          Thank you, we will contact you shortly.
+        </div>
+      }
 
       {showPaymentModal && (
         <div className={styles.modal}>
