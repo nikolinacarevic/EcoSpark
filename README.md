@@ -1,5 +1,7 @@
 ﻿# EcoSpark Semester Project
 
+Documentation: [Notion](https://cute-fig-01b.notion.site/EcoSpark-7366112d9ff3480e9126c92e798ac064)
+
 - [Project Structure](#project-structure)
 - [Class Projects](#class-projects)
 - [Semester Project](#support)
