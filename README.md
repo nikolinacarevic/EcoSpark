@@ -1,7 +1,6 @@
 ﻿# EcoSpark Semester Project
 
-- Deployment: [Vercel](https://hci-3dv3.vercel.app/)
-- Documentation: [Notion](https://www.notion.so/EcoSpark-7366112d9ff3480e9126c92e798ac064?pvs=4)
+Documentation: [Notion](https://www.notion.so/EcoSpark-7366112d9ff3480e9126c92e798ac064?pvs=4)
 
 - [Project Structure](#project-structure)
 - [Class Projects](#class-projects)
